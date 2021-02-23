@@ -10,7 +10,6 @@ RUN apt-get update \
         jq \
         iputils-ping \
         libcurl4 \
-        libicu60 \
         libunwind8 \
         netcat \
         libssl1.0
