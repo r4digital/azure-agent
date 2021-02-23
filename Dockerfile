@@ -3,16 +3,15 @@ FROM r4digital/ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "APT::Get::Assume-Yes \"true\";" > /etc/apt/apt.conf.d/90assumeyes
 
-RUN apt-get update \
-&& apt-get install -y --no-install-recommends \
-        ca-certificates \
-        curl \
+RUN apt-get install -y --no-install-recommends \
         jq \
         iputils-ping \
         libcurl4 \
         libunwind8 \
         netcat \
-        libssl1.0
+        libssl1.0 \
+        docker-ce \
+        containerd.io
 
 WORKDIR /azp
 
