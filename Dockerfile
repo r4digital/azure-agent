@@ -9,9 +9,7 @@ RUN apt-get install -y --no-install-recommends \
         libcurl4 \
         libunwind8 \
         netcat \
-        libssl1.0 \
-        docker-ce \
-        containerd.io
+        libssl1.0
 
 WORKDIR /azp
 
